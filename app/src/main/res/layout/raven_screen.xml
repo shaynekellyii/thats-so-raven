@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="250dip"
+            android:layout_height="150dip"
+            android:layout_marginBottom="20dip"
+            android:id="@+id/soRavenImage"
+            android:src="@drawable/thatssoraven"/>
+
+        <TextView
+            android:id="@+id/userInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/abc_text_size_headline_material"
+            android:text="input"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/soRavenText"
+            android:textSize="@dimen/abc_text_size_headline_material"
+            android:textStyle="italic"
+            android:text="That's So Raven!"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:id="@+id/disappointText"
+            android:layout_margin="15dip"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
